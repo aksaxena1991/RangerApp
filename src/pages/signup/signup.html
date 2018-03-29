@@ -1,0 +1,60 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Signup</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeSignupPopup()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="signup-content" padding>
+  <form novalidate (ngSubmit)="onSubmit(user)" [formGroup]="User">
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Fullname</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+<ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+<ion-item>
+      <ion-label floating>Email Id</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Mobile Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Country</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Refer Code (Optional)</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-row class="bottom-row">
+    <ion-col class="signup-button">
+      <button ion-button block (click)="doSignup()">Signup</button>
+    </ion-col>
+  </ion-row>
+  </form>
+</ion-content>
