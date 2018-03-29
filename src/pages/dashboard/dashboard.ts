@@ -17,7 +17,7 @@ export class DashboardPage {
   ourType:ContactFieldType[] = ['displayName'];
   contactsFound = [];
   constructor(private contacts:Contacts,public navCtrl: NavController, public navParams: NavParams) {
-this.search('');
+// this.search('');
   }
   search(query)
   {

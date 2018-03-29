@@ -26,13 +26,14 @@ creds:any = {};
 
   doSignin(creds) {
     this.showLoader();
-    this.authService.authenticate(creds).then((data)=>{
-      if(data)
-      {
-        this.loading.dismiss();
-        this.navCtrl.setRoot('MenuPage');
-      }
-    });
+    this.navCtrl.setRoot('MenuPage');
+    // this.authService.authenticate(creds).then((data)=>{
+    //   if(data)
+    //   {
+    //     this.loading.dismiss();
+    //     // this.navCtrl.setRoot('MenuPage');
+    //   }
+    // });
 
 
 
